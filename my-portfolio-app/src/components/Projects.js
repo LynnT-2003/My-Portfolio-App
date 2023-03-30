@@ -22,6 +22,7 @@ export const Projects = () => {
       title: "TutorPlus",
       description: "My First Full-Stack Team Project ",
       imgUrl: projImg3,
+      projURL: "https://tutor-plus.vercel.app/",
     },
   ];
 
