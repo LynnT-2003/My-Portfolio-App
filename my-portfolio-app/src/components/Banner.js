@@ -71,7 +71,11 @@ export const Banner = () => {
             </div>
           </Col>
           <Col xs={12} md={7} xl={5}>
-            <img src={headerImg} alt="Header Image" />
+            <img
+              src={headerImg}
+              alt="Header Image"
+              style={{ maxWidth: "120%", height: "auto" }}
+            />
           </Col>
         </Row>
       </Container>
