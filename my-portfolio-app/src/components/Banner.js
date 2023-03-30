@@ -7,7 +7,7 @@ import headerImg from "../assets/img/header-img.svg";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Developer"];
+  const toRotate = ["like", "love", "worship"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -35,7 +35,7 @@ export const Banner = () => {
       setDelta((prevDelta) => prevDelta / 2);
     }
 
-    if (isDeleting && updatedText.length === fullText) {
+    if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
@@ -52,14 +52,19 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi I'm Lynn Thit `}
-              <span className="wrap">{text}</span>
+              {`Hi! I'm Lynn Thit. I`} <br />
+              <span className="wrap">
+                {text} {` anime girls`}
+              </span>
             </h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              In a world of ink and hue, Anime girls, to you I'm true, With eyes
+              that sparkle, vibrant, wide, In their stories, I do confide. Their
+              strength and grace, a dance divine, Each character, a love
+              enshrined, Through trials and laughs, they persevere, Embodying
+              hope, in a world unclear. A love so deep, it knows no bounds, In
+              every frame, enchantment's found, In their embrace, my heart does
+              soar, For anime girls, forevermore.
             </p>
             {/* <button onClick={() => console.log("connect")}>
               Let's Connect <ArrowRightCircle size={25} />
