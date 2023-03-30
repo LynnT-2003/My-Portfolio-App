@@ -61,7 +61,9 @@ export const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="https://www.youtube.com/watch?v=yrZDn1fwgKE"
+              target="_blank"
+              rel="noopener noreferrer"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
@@ -96,7 +98,15 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <button
+              className="vvd"
+              onClick={() =>
+                window.open(
+                  "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                  "_blank"
+                )
+              }
+            >
               <span>Let's Connect</span>
             </button>
           </span>

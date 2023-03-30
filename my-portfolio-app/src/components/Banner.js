@@ -64,8 +64,17 @@ export const Banner = () => {
               enchantment's found. In your embrace, my heart does soar. For
               anime girls, forevermore.
             </p>
-            <div className="tagline-no-bg" style={{ marginLeft: "0px" }}>
-              Let’s Connect <ArrowRightCircle size={25} />
+            <div
+              className="tagline-no-bg navbar-text"
+              style={{ marginLeft: "0px" }}
+            >
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Let’s Connect <ArrowRightCircle size={25} />
+              </a>
             </div>
           </Col>
           <Col xs={12} md={7} xl={5}>
