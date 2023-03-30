@@ -66,9 +66,9 @@ export const Banner = () => {
               every frame, enchantment's found, In their embrace, my heart does
               soar, For anime girls, forevermore.
             </p>
-            {/* <button onClick={() => console.log("connect")}>
-              Let's Connect <ArrowRightCircle size={25} />
-            </button> */}
+            <div className="tagline-no-bg">
+              Let’s Connect <ArrowRightCircle size={25} />
+            </div>
           </Col>
           <Col xs={12} md={7} xl={5}>
             <img src={headerImg} alt="Header Image" />
