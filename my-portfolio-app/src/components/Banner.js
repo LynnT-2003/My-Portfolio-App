@@ -86,6 +86,7 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
+      <div id="skills"></div>
     </section>
   );
 };

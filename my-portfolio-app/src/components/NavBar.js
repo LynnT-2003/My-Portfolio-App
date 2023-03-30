@@ -61,9 +61,7 @@ export const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="https://www.youtube.com/watch?v=yrZDn1fwgKE"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#projects"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
