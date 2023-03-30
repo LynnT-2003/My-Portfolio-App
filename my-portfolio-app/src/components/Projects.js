@@ -1,46 +1,33 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/grade-tracker.jpg";
+import projImg2 from "../assets/img/supplier.jpg";
+import projImg3 from "../assets/img/tutorPlus.png";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Grade Tracker",
+      description: "My First Ever Web Dev Project",
       imgUrl: projImg1,
+      projURL: "https://lynnt-2003.github.io/grade-tracker/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Suppliers Management",
+      description: "My First Ever Full Stack Project using MongoDB",
       imgUrl: projImg2,
+      projURL: "https://stock-final-6411271.vercel.app/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "TutorPlus",
+      description: "My First Full-Stack Team Project ",
       imgUrl: projImg3,
     },
   ];
 
   return (
-    <section className="project" id="projects">
-      <Row>
+    <section className="project">
+      <Row id="projects">
         <Col>
           <h2>Projects</h2>
           <p>
@@ -74,21 +61,11 @@ export const Projects = () => {
                   })}
                 </Row>
               </Tab.Pane>
-              <Tab.Pane eventKey="section">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque quam, quod neque provident velit, rem explicabo
-                  excepturi id illo molestiae blanditiis, eligendi dicta
-                  officiis asperiores delectus quasi inventore debitis quo.
-                </p>
+              <Tab.Pane eventKey="second">
+                <p>Coming soon...</p>
               </Tab.Pane>
               <Tab.Pane eventKey="third">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque quam, quod neque provident velit, rem explicabo
-                  excepturi id illo molestiae blanditiis, eligendi dicta
-                  officiis asperiores delectus quasi inventore debitis quo.
-                </p>
+                <p>Coming soon...</p>
               </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
