@@ -48,7 +48,7 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center text-left">
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
@@ -58,15 +58,13 @@ export const Banner = () => {
               </span>
             </h1>
             <p>
-              In a world of ink and hue, Anime girls, to you I'm true, With eyes
-              that sparkle, vibrant, wide, In their stories, I do confide. Their
+              In a world of ink and hue, anime girls, to you I'm true. Your
               strength and grace, a dance divine, Each character, a love
-              enshrined, Through trials and laughs, they persevere, Embodying
-              hope, in a world unclear. A love so deep, it knows no bounds, In
-              every frame, enchantment's found, In their embrace, my heart does
-              soar, For anime girls, forevermore.
+              enshrined. A love so deep, it knows no bounds. In every frame,
+              enchantment's found. In your embrace, my heart does soar. For
+              anime girls, forevermore.
             </p>
-            <div className="tagline-no-bg">
+            <div className="tagline-no-bg" style={{ marginLeft: "0px" }}>
               Let’s Connect <ArrowRightCircle size={25} />
             </div>
           </Col>
