@@ -11,10 +11,10 @@ export const Banner = () => {
 
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["like", "love", "worship"];
+  const toRotate = ["VMS Student.", "Web Designer.", "Web Developer."];
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000;
+  const [delta, setDelta] = useState(300); // Set a fixed value of 150ms
+  const period = 150;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -26,12 +26,20 @@ export const Banner = () => {
     };
   }, [text]);
 
+  const commonText = "Web ";
+
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
+    let commonText = "Web ";
+
+    let animatableText = fullText.startsWith(commonText)
+      ? fullText.replace(commonText, "")
+      : fullText;
+
     let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
+      ? animatableText.substring(0, text.length - 1)
+      : animatableText.substring(0, text.length + 1);
 
     setText(updatedText);
 
@@ -39,7 +47,7 @@ export const Banner = () => {
       setDelta((prevDelta) => prevDelta / 2);
     }
 
-    if (!isDeleting && updatedText === fullText) {
+    if (!isDeleting && updatedText === animatableText) {
       setIsDeleting(true);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
@@ -56,11 +64,14 @@ export const Banner = () => {
           <Col xs={12} md={isIpadLandscape ? 12 : 6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi! I'm Lynn Thit. I`} <br />
+              Hi! I'm Lynn Thit. I'm a {"      "}
               <span className="wrap">
-                {text} {` anime girls`}
+                {toRotate[loopNum % toRotate.length].startsWith(commonText) &&
+                  commonText}
+                {text}
               </span>
             </h1>
+
             <p>
               In a world of ink and hue, anime girls, to you I'm true. Your
               strength and grace, a dance divine, Each character, a love
