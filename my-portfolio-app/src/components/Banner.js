@@ -107,11 +107,15 @@ export const Banner = () => {
             <p>
               As a dedicated third-year Computer Science student studying at
               Assumption University of Thailand, my focus is on perfecting my
-              web development skills. <br />
+              web development skills.
+              <br />
               <br />
               Eager to expand my knowledge, my goal is to learn and grow in this
               ever-evolving field, ultimately enhancing my own abilities and
               expertise.
+              <br />
+              <br />
+              My hobbies are Anime, BlackPink, and Oero.
             </p>
             <div
               className="tagline-no-bg navbar-text"
