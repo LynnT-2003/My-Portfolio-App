@@ -1,7 +1,7 @@
 # Personal Portfolio Website
 
-An average summer web-dev project. <br/>
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br/>
+An average summer web-dev project.
 
 ![App Screenshot](https://github.com/LynnT-2003/my-portfolio-app/blob/main/my-portfolio-app/src/assets/img/1.png?raw=true)
 
