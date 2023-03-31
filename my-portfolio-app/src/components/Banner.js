@@ -106,9 +106,10 @@ export const Banner = () => {
 
             <p>
               As a dedicated third-year Computer Science student studying at
-              Assumption University of Thailand, my focus is on mastering web
-              development skills. Eager to expand my knowledge, Driven by
-              self-improvement, my goal is to learn and grow in this
+              Assumption University of Thailand, my focus is on perfecting my
+              web development skills. <br />
+              <br />
+              Eager to expand my knowledge, my goal is to learn and grow in this
               ever-evolving field, ultimately enhancing my own abilities and
               expertise.
             </p>
