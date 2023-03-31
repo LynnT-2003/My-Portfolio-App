@@ -11,10 +11,10 @@ export const Banner = () => {
 
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["VMS Student.", "Web Designer.", "Web Developer."];
+  const toRotate = [" VMS Student.", " Web Designer.", " Web Developer."];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300); // Set a fixed value of 150ms
-  const period = 150;
+  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -26,12 +26,11 @@ export const Banner = () => {
     };
   }, [text]);
 
-  const commonText = "Web ";
+  const commonText = " Web ";
 
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
-    let commonText = "Web ";
 
     let animatableText = fullText.startsWith(commonText)
       ? fullText.replace(commonText, "")
@@ -44,7 +43,7 @@ export const Banner = () => {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta(150);
     }
 
     if (!isDeleting && updatedText === animatableText) {
@@ -53,7 +52,7 @@ export const Banner = () => {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(300);
     }
   };
 
@@ -64,7 +63,7 @@ export const Banner = () => {
           <Col xs={12} md={isIpadLandscape ? 12 : 6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              Hi! I'm Lynn Thit. I'm a {"      "}
+              Hi! I'm Lynn Thit. I'm a
               <span className="wrap">
                 {toRotate[loopNum % toRotate.length].startsWith(commonText) &&
                   commonText}
