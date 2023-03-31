@@ -54,7 +54,7 @@ export const Projects = () => {
                 <Nav.Link eventKey="third">Phase Three</Nav.Link>
               </Nav.Item>
             </Nav>
-            <Tab.Content>
+            <Tab.Content style={{ paddingLeft: "1rem", paddingRight: "1rem" }}>
               <Tab.Pane eventKey="first">
                 <Row className="justify-content-center">
                   {projects.map((project, index) => {

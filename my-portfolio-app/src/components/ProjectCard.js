@@ -6,7 +6,7 @@ export const ProjectCard = ({ title, description, imgUrl, projURL }) => {
       <div
         className="proj-imgbx"
         onClick={() => window.open(projURL, "_blank")}
-        style={{ width: "30rem", height: "30rem" }}
+        style={{ width: "25rem", height: "25rem" }}
       >
         <img src={imgUrl} style={{ width: "100%", height: "100%" }} />
         <div className="proj-txtx">
