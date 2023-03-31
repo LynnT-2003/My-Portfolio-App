@@ -72,11 +72,11 @@ export const Banner = () => {
             </h1>
 
             <p>
-              In a world of ink and hue, anime girls, to you I'm true. Your
-              strength and grace, a dance divine, Each character, a love
-              enshrined. A love so deep, it knows no bounds. In every frame,
-              enchantment's found. In your embrace, my heart does soar. For
-              anime girls, forevermore.
+              I'm a dedicated third-year Computer Science student in the VMS
+              faculty at Assumption University of Thailand, with a growing
+              passion for web development. Eager to expand my knowledge, I aim
+              to create intuitive and impactful websites that enhance user
+              experiences across the digital world.
             </p>
             <div
               className="tagline-no-bg navbar-text"
