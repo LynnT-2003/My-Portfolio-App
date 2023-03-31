@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useWindowSize } from "react-use";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import { Prev } from "react-bootstrap/esm/PageItem";
 import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
@@ -25,6 +24,37 @@ export const Banner = () => {
       clearInterval(ticker);
     };
   }, [text]);
+
+  useEffect(() => {
+    // This code applies the effect on the 'p' element on startup
+    const letters = "ABIJKLMNOPQRSTUVWXYZ";
+    let interval = null;
+    let iteration = 0;
+    const target = document.querySelector(".tagline");
+    const originalText = target.innerText;
+
+    interval = setInterval(() => {
+      target.innerText = target.innerText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return originalText[index];
+          }
+
+          return letters[Math.floor(Math.random() * 20)];
+        })
+        .join("");
+
+      if (iteration >= originalText.length) {
+        clearInterval(interval);
+      }
+
+      iteration += 1 / 3;
+    }, 20);
+
+    // Return a cleanup function to clear the interval
+    return () => clearInterval(interval);
+  }, []);
 
   const commonText = " Web ";
 
@@ -63,12 +93,15 @@ export const Banner = () => {
           <Col xs={12} md={isIpadLandscape ? 12 : 6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              Hi! I'm Lynn Thit -
-              <span className="wrap">
-                {toRotate[loopNum % toRotate.length].startsWith(commonText) &&
-                  commonText}
-                {text}
-              </span>
+              Hi! I'm Lynn Thit - <br />
+              <div style={{ paddingTop: "1rem" }}>
+                <span className="wrap">
+                  {"a "}
+                  {toRotate[loopNum % toRotate.length].startsWith(commonText) &&
+                    commonText}{" "}
+                  {text}
+                </span>
+              </div>
             </h1>
 
             <p>
