@@ -63,7 +63,7 @@ export const Banner = () => {
           <Col xs={12} md={isIpadLandscape ? 12 : 6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              Hi! I'm Lynn Thit. I'm a
+              Hi! I'm Lynn Thit -
               <span className="wrap">
                 {toRotate[loopNum % toRotate.length].startsWith(commonText) &&
                   commonText}
@@ -72,11 +72,12 @@ export const Banner = () => {
             </h1>
 
             <p>
-              I'm a dedicated third-year Computer Science student in the VMS
-              faculty at Assumption University of Thailand, with a growing
-              passion for web development. Eager to expand my knowledge, I aim
-              to create intuitive and impactful websites that enhance user
-              experiences across the digital world.
+              As a dedicated third-year Computer Science student studying at
+              Assumption University of Thailand, my focus is on mastering web
+              development skills. Eager to expand my knowledge, Driven by
+              self-improvement, my goal is to learn and grow in this
+              ever-evolving field, ultimately enhancing my own abilities and
+              expertise.
             </p>
             <div
               className="tagline-no-bg navbar-text"
