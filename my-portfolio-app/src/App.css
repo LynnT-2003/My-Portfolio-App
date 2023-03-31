@@ -420,6 +420,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  width: 30rem;
+  height: 30rem;
 }
 .proj-imgbx::before {
   content: "";
@@ -466,6 +468,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.project-card {
+  margin: 0 0.5rem 1rem;
 }
 
 /************ Projects Css ************/

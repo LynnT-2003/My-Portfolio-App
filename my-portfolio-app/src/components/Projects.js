@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/grade-tracker.jpg";
-import projImg2 from "../assets/img/supplier.jpg";
-import projImg3 from "../assets/img/tutorPlus.png";
+import projImg1 from "../assets/img/gradetracker-logo.png";
+import projImg2 from "../assets/img/supplier-management-logo.png";
+import projImg3 from "../assets/img/tutorplus-logo.png";
 
 export const Projects = () => {
   const projects = [
@@ -45,23 +45,24 @@ export const Projects = () => {
               id="pills-tab"
             >
               <Nav.Item>
-                <Nav.Link eventKey="first">Tab One</Nav.Link>
+                <Nav.Link eventKey="first">Phase One</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                <Nav.Link eventKey="second">Phase Two</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                <Nav.Link eventKey="third">Phase Three</Nav.Link>
               </Nav.Item>
             </Nav>
             <Tab.Content>
               <Tab.Pane eventKey="first">
-                <Row>
+                <Row className="justify-content-center">
                   {projects.map((project, index) => {
                     return <ProjectCard key={index} {...project} />;
                   })}
                 </Row>
               </Tab.Pane>
+
               <Tab.Pane eventKey="second">
                 <p>Coming soon...</p>
               </Tab.Pane>
