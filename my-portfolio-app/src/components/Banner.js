@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
+import { useWindowSize } from "react-use";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { Prev } from "react-bootstrap/esm/PageItem";
 import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
+  const { width } = useWindowSize();
+  const isIpadLandscape = width >= 1024 && width <= 1366;
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["like", "love", "worship"];
@@ -49,7 +53,7 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center text-left">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={isIpadLandscape ? 12 : 6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
               {`Hi! I'm Lynn Thit. I`} <br />
@@ -77,13 +81,15 @@ export const Banner = () => {
               </a>
             </div>
           </Col>
-          <Col xs={12} md={7} xl={5}>
-            <img
-              src={headerImg}
-              alt="Header Image"
-              style={{ maxWidth: "120%", height: "auto" }}
-            />
-          </Col>
+          {!isIpadLandscape && (
+            <Col xs={12} md={7} xl={5}>
+              <img
+                src={headerImg}
+                alt="Header Image"
+                style={{ maxWidth: "120%", height: "auto" }}
+              />
+            </Col>
+          )}
         </Row>
       </Container>
       <div id="skills"></div>
