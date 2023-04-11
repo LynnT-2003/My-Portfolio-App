@@ -49,7 +49,7 @@ export const Projects = () => {
       description:
         "A Modern Full Stack E-Commerce Web Application built using React. Powered by Stripe payment system, and Sanity.io CMS",
       imgUrl: projImg4,
-      projURL: "https://https://ecommerce-sanity-stripe-lynnt-2003.vercel.app/",
+      projURL: "https://ecommerce-sanity-stripe-lynnt-2003.vercel.app/",
     },
   ];
 
