@@ -63,7 +63,9 @@ export const Projects = () => {
             strength and grace, a dance divine, Each character, a love
             enshrined. A love so deep, it knows no bounds. In every frame,
             enchantment's found. In your embrace, my heart does soar. For anime
-            girls, forevermore.
+            girls, forevermore. I just started learning web development in late
+            Spring of 2022 and these are some of the projects I have worked on
+            so far throughout the journey.
           </p>
           <Tab.Container id="projects-tabs" defaultActiveKey="first">
             <Nav
